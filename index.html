@@ -1,112 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Amit Thrift Store</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      color: #222;
+      background: #f5f5f5;
     }
+
     header {
-      background: #000;
-      color: #fff;
-      padding: 20px;
+      background: #111;
+      color: white;
+      padding: 15px;
       text-align: center;
     }
-    section {
-      padding: 20px;
+
+    header h1 {
+      margin: 5px 0;
     }
-    .tagline {
-      font-size: 18px;
-      color: #444;
-      text-align: center;
-      margin-bottom: 20px;
+
+    header p {
+      margin: 0;
+      font-size: 14px;
+      color: #ccc;
     }
+
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
       gap: 15px;
-    }
-    .product {
-      background: #fff;
       padding: 15px;
+    }
+
+    .card {
+      background: white;
       border-radius: 10px;
+      overflow: hidden;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: center;
     }
-    .product img {
+
+    .card img {
       width: 100%;
-      border-radius: 8px;
+      height: 200px;
+      object-fit: cover;
     }
-    .btn {
-      display: block;
-      margin: 25px auto;
-      width: fit-content;
-      background: #25D366;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 30px;
-      text-decoration: none;
+
+    .card .info {
+      padding: 10px;
+    }
+
+    .card h3 {
+      font-size: 15px;
+      margin: 5px 0;
+    }
+
+    .price {
+      color: green;
       font-weight: bold;
     }
+
+    .buy {
+      display: block;
+      margin-top: 8px;
+      text-align: center;
+      background: #25D366;
+      color: white;
+      padding: 8px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
     footer {
-      background: #eee;
       text-align: center;
       padding: 15px;
-      font-size: 14px;
+      font-size: 13px;
+      color: #666;
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Amit Thrift Store</h1>
+  <p>Branded Thrifted Fashion • Best Price • Trusted Quality</p>
 </header>
 
-<section>
-  <div class="tagline">
-    Premium Thrifted Clothes • Budget Friendly • Trusted Quality  
-    <br>
-    प्रीमियम थ्रिफ्ट कपड़े • कम दाम • भरोसेमंद क्वालिटी
+<div class="products">
+
+  <!-- Product cards -->
+  <!-- Dummy images – later you can replace -->
+
+  <!-- Repeat this block for 50 products -->
+  <!-- Product 1 -->
+  <div class="card">
+    <img src="https://source.unsplash.com/400x500/?tshirt" />
+    <div class="info">
+      <h3>Branded T-Shirt</h3>
+      <p class="price">₹499</p>
+      <a class="buy" href="https://wa.me/918209763302">Buy on WhatsApp</a>
+    </div>
   </div>
 
-  <h2>Our Collection (20 Products)</h2>
-
-  <div class="products">
-    <div class="product">Product 1</div>
-    <div class="product">Product 2</div>
-    <div class="product">Product 3</div>
-    <div class="product">Product 4</div>
-    <div class="product">Product 5</div>
-    <div class="product">Product 6</div>
-    <div class="product">Product 7</div>
-    <div class="product">Product 8</div>
-    <div class="product">Product 9</div>
-    <div class="product">Product 10</div>
-    <div class="product">Product 11</div>
-    <div class="product">Product 12</div>
-    <div class="product">Product 13</div>
-    <div class="product">Product 14</div>
-    <div class="product">Product 15</div>
-    <div class="product">Product 16</div>
-    <div class="product">Product 17</div>
-    <div class="product">Product 18</div>
-    <div class="product">Product 19</div>
-    <div class="product">Product 20</div>
+  <div class="card">
+    <img src="https://source.unsplash.com/400x500/?jacket" />
+    <div class="info">
+      <h3>Denim Jacket</h3>
+      <p class="price">₹999</p>
+      <a class="buy" href="https://wa.me/918209763302">Buy on WhatsApp</a>
+    </div>
   </div>
 
-  <a class="btn" href="https://wa.me/918209763302" target="_blank">
-    Order on WhatsApp
-  </a>
-</section>
+  <div class="card">
+    <img src="https://source.unsplash.com/400x500/?hoodie" />
+    <div class="info">
+      <h3>Hoodie</h3>
+      <p class="price">₹799</p>
+      <a class="buy" href="https://wa.me/918209763302">Buy on WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://source.unsplash.com/400x500/?shirt" />
+    <div class="info">
+      <h3>Casual Shirt</h3>
+      <p class="price">₹599</p>
+      <a class="buy" href="https://wa.me/918209763302">Buy on WhatsApp</a>
+    </div>
+  </div>
+
+</div>
 
 <footer>
-  © 2026 Amit Thrift Store | All Payments Accepted  
+  © 2026 Amit Thrift Store • WhatsApp Orders Only
 </footer>
 
 </body>
-  </html>
+</html>
